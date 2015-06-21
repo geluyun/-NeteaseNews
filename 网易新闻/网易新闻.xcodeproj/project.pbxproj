@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		C8738EBA1B37270900D474CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8738EB91B37270900D474CE /* main.m */; };
 		C8738EBD1B37270900D474CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8738EBC1B37270900D474CE /* AppDelegate.m */; };
-		C8738EC01B37270900D474CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8738EBF1B37270900D474CE /* ViewController.m */; };
-		C8738EC31B37270900D474CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8738EC11B37270900D474CE /* Main.storyboard */; };
 		C8738EC51B37270900D474CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8738EC41B37270900D474CE /* Images.xcassets */; };
 		C8738EC81B37270900D474CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8738EC61B37270900D474CE /* LaunchScreen.xib */; };
 		C8738ED41B37270A00D474CE /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8738ED31B37270A00D474CE /* ____Tests.m */; };
+		C8738EE11B372A7C00D474CE /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8738EE01B372A7C00D474CE /* News.storyboard */; };
+		C8738EE41B372ABB00D474CE /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8738EE31B372ABB00D474CE /* NewsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		C8738EB91B37270900D474CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C8738EBB1B37270900D474CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C8738EBC1B37270900D474CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C8738EBE1B37270900D474CE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C8738EBF1B37270900D474CE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C8738EC21B37270900D474CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8738EC41B37270900D474CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C8738EC71B37270900D474CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C8738ECD1B37270A00D474CE /* 网易新闻Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "网易新闻Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8738ED21B37270A00D474CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8738ED31B37270A00D474CE /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		C8738EE01B372A7C00D474CE /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		C8738EE21B372ABB00D474CE /* NewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
+		C8738EE31B372ABB00D474CE /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +81,9 @@
 		C8738EB61B37270900D474CE /* 网易新闻 */ = {
 			isa = PBXGroup;
 			children = (
+				C8738EDD1B372A2B00D474CE /* Classes */,
 				C8738EBB1B37270900D474CE /* AppDelegate.h */,
 				C8738EBC1B37270900D474CE /* AppDelegate.m */,
-				C8738EBE1B37270900D474CE /* ViewController.h */,
-				C8738EBF1B37270900D474CE /* ViewController.m */,
-				C8738EC11B37270900D474CE /* Main.storyboard */,
 				C8738EC41B37270900D474CE /* Images.xcassets */,
 				C8738EC61B37270900D474CE /* LaunchScreen.xib */,
 				C8738EB71B37270900D474CE /* Supporting Files */,
@@ -117,6 +115,32 @@
 				C8738ED21B37270A00D474CE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C8738EDD1B372A2B00D474CE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C8738EDE1B372A2B00D474CE /* News */,
+				C8738EDF1B372A2B00D474CE /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C8738EDE1B372A2B00D474CE /* News */ = {
+			isa = PBXGroup;
+			children = (
+				C8738EE01B372A7C00D474CE /* News.storyboard */,
+				C8738EE21B372ABB00D474CE /* NewsTableViewController.h */,
+				C8738EE31B372ABB00D474CE /* NewsTableViewController.m */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		C8738EDF1B372A2B00D474CE /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +223,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8738EC31B37270900D474CE /* Main.storyboard in Resources */,
 				C8738EC81B37270900D474CE /* LaunchScreen.xib in Resources */,
+				C8738EE11B372A7C00D474CE /* News.storyboard in Resources */,
 				C8738EC51B37270900D474CE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8738EC01B37270900D474CE /* ViewController.m in Sources */,
+				C8738EE41B372ABB00D474CE /* NewsTableViewController.m in Sources */,
 				C8738EBD1B37270900D474CE /* AppDelegate.m in Sources */,
 				C8738EBA1B37270900D474CE /* main.m in Sources */,
 			);
@@ -244,14 +268,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C8738EC11B37270900D474CE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C8738EC21B37270900D474CE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C8738EC61B37270900D474CE /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
