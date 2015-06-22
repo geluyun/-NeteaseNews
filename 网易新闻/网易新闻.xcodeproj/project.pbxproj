@@ -15,6 +15,7 @@
 		C8738ED41B37270A00D474CE /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8738ED31B37270A00D474CE /* ____Tests.m */; };
 		C8738EE11B372A7C00D474CE /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8738EE01B372A7C00D474CE /* News.storyboard */; };
 		C8738EE41B372ABB00D474CE /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8738EE31B372ABB00D474CE /* NewsTableViewController.m */; };
+		C8B9E25F1B37AB970051A648 /* NetWorkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B9E25E1B37AB970051A648 /* NetWorkTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		C8738EE01B372A7C00D474CE /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		C8738EE21B372ABB00D474CE /* NewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
 		C8738EE31B372ABB00D474CE /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
+		C8B9E25D1B37AB970051A648 /* NetWorkTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkTools.h; sourceTree = "<group>"; };
+		C8B9E25E1B37AB970051A648 /* NetWorkTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +157,8 @@
 		C8738EDF1B372A2B00D474CE /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				C8B9E25D1B37AB970051A648 /* NetWorkTools.h */,
+				C8B9E25E1B37AB970051A648 /* NetWorkTools.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -302,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8B9E25F1B37AB970051A648 /* NetWorkTools.m in Sources */,
 				C8738EE41B372ABB00D474CE /* NewsTableViewController.m in Sources */,
 				C8738EBD1B37270900D474CE /* AppDelegate.m in Sources */,
 				C8738EBA1B37270900D474CE /* main.m in Sources */,
